@@ -1,0 +1,143 @@
+/* Reset & Warna Dasar Halaman (Menyatu Tanpa Kotak Mengapung) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fb;
+  color: #334155;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Header Minimalis ala Masuk PTN */
+.site-header {
+  border-bottom: 1px solid #cbd5e1;;
+  background-color: #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e293b;
+  text-decoration: none;
+}
+
+.site-nav a {
+  margin-left: 1.25rem;
+  font-size: 0.9rem;
+  color: #475569;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #0909FF;
+}
+
+/* Kontainer Utama di Tengah */
+main {
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Judul & Tanggal Artikel */
+.post-title {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Jarak Paragraf di Dalam Artikel */
+.post-body p {
+  margin-bottom: 1.25rem;
+}
+
+/* Footer Minimalis */
+.site-footer {
+  width: 100%;                           /* Membentang penuh selebar layar */
+  background-color: #e2e8f0;             /* Warna latar belakang soft senada header */
+  border-top: 1px solid #cbd5e1;;         /* Garis pembatas atas */
+  margin-top: 4rem;                      /* Jarak dari konten artikel di atasnya */
+  padding: 1.5rem 1rem;                  /* Spasi atas-bawah dan samping */
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+
+/* Judul Materi / Sub-bab di Dalam Artikel */
+.judul_Materi {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-bottom: 8px;
+  width: fit-content;
+}
+
+.judul_Materi::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #0909FF, #F70D1A);
+  border-radius: 2px;
+}
+
+/* Kotak Rumus / Contoh Soal di Dalam Artikel */
+.rumus {
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(248,250,252,1) 100%);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #0909FF;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.rumus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.875rem;
+}
+
+.rumus-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0909FF;
+  background: rgba(9,9,255,0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
